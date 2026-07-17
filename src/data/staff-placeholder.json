@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Mr. C. Hatches",
+    "role": "Headmaster",
+    "subject": "Leadership",
+    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "name": "Mr. J. Smith",
+    "role": "Deputy Head",
+    "subject": "Physical Science",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "name": "Mrs. A. Williams",
+    "role": "HOD Academics",
+    "subject": "English",
+    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "name": "Mr. B. Nkosi",
+    "role": "Senior Master",
+    "subject": "Mathematics",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "name": "Ms. L. Van Der Merwe",
+    "role": "Grade Head",
+    "subject": "Life Sciences",
+    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "name": "Mr. T. Bala",
+    "role": "Sports Director",
+    "subject": "History",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "name": "Mrs. S. Govender",
+    "role": "Subject Head",
+    "subject": "Accounting",
+    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "name": "Mr. P. Jacobs",
+    "role": "Teacher",
+    "subject": "Geography",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+  }
+]

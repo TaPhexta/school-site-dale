@@ -1,0 +1,158 @@
+.boarding-page {
+    background: #fff;
+}
+
+.boarding-hero {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.boarding-hero-image {
+    position: absolute;
+    inset: 0;
+}
+
+.boarding-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boarding-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(17,17,17,.9),
+        rgba(17,17,17,.5),
+        transparent
+    );
+}
+
+.boarding-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.boarding-text {
+    max-width: 650px;
+    color: #fff;
+}
+
+.boarding-text h1 {
+    font-size: clamp(3rem,6vw,6rem);
+    margin-bottom: 1.5rem;
+}
+
+.boarding-text p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    opacity: .9;
+    margin-bottom: 2rem;
+}
+
+.houses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 3rem;
+}
+
+.house-card {
+    background: var(--dale-gray);
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: .3s;
+}
+
+.house-card:hover {
+    background: var(--dale-black);
+    color: #fff;
+}
+
+.house-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: var(--dale-red);
+    font-size: 1.75rem;
+    transition: .3s;
+}
+
+.house-card:hover .house-icon {
+    background: var(--dale-red);
+    color: #fff;
+}
+
+.house-card h3 {
+    margin-bottom: .75rem;
+}
+
+.house-card p {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: .8rem;
+    opacity: .7;
+}
+
+.boarding-routine {
+    background: var(--dale-black);
+    color: #fff;
+    padding: 6rem 0;
+}
+
+.routine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 4rem;
+    align-items: center;
+}
+
+.routine-content h2 {
+    color: var(--dale-red);
+    margin-bottom: 1.5rem;
+}
+
+.routine-content p {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.routine-list {
+    border-left: 1px solid rgba(255,255,255,.2);
+    padding-left: 1.5rem;
+}
+
+.routine-list li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.routine-list span {
+    color: var(--dale-gold);
+    font-weight: 700;
+}
+
+.routine-list small {
+    color: #94a3b8;
+    margin-top: .3rem;
+    font-size: .9rem;
+}
+
+.routine-image img {
+    width: 100%;
+    border-radius: 4px;
+    opacity: .8;
+    box-shadow: 0 20px 40px rgba(0,0,0,.4);
+}

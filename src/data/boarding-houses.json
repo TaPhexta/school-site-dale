@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Sutton House",
+        "description": "Junior Boarding House (Grades 8-9)",
+        "icon": "home"
+    },
+    {
+        "name": "Paterson House",
+        "description": "Senior Boarding House (Grades 10-11)",
+        "icon": "home"
+    },
+    {
+        "name": "Joubert House",
+        "description": "Matric Boarding House (Grade 12)",
+        "icon": "home"
+    }
+]

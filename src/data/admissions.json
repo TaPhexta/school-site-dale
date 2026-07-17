@@ -1,0 +1,41 @@
+{
+    "hero": {
+        "title": "Join the Brotherhood",
+        "description": "Admission to Dale College is a commitment to excellence. We are looking for young men who are ready to embrace our values and contribute to our legacy."
+    },
+    "steps": [
+        {
+            "number": 1,
+            "title": "Application",
+            "description": "Complete the online form or download the PDF application. Ensure all supporting documents are attached."
+        },
+        {
+            "number": 2,
+            "title": "Assessment",
+            "description": "Prospective students will write an entrance assessment focusing on Mathematics and English."
+        },
+        {
+            "number": 3,
+            "title": "Interview",
+            "description": "Successful candidates and their parents will be invited for an interview with the Headmaster."
+        }
+    ],
+    "requiredDocuments": [
+        "Certified copy of Birth Certificate",
+        "Latest School Report",
+        "ID of Parents/Guardians",
+        "Proof of Residence",
+        "Character Reference"
+    ],
+    "grades": [
+        "Grade 6",
+        "Grade 7",
+        "Grade 8",
+        "Grade 9",
+        "Grade 10"
+    ],
+    "entryYears": [
+        "2026",
+        "2027"
+    ]
+}

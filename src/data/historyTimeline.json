@@ -1,0 +1,38 @@
+[
+    {
+        "year": "1861",
+        "title": "The Foundation",
+        "text": "It began with a vision. In the dusty streets of King William's Town, a decision was made to establish an institution that would not merely educate boys, but forge men. The foundation stone was laid, marking the birth of a legacy that would echo through centuries.",
+        "image": "https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=2000&auto=format&fit=crop"
+    },
+    {
+        "year": "1877",
+        "title": "The Dale Name",
+        "text": "Named after Sir Langham Dale, Superintendent General of Education, the college adopted its identity. The name 'Dale' became synonymous with a specific breed of toughness and intellect—a duality that defines us to this day.",
+        "image": "https://images.unsplash.com/photo-1524634126442-357e0eac3c14?q=80&w=1974&auto=format&fit=crop"
+    },
+    {
+        "year": "1910s",
+        "title": "Brothers in Arms",
+        "text": "The Great War tested the resolve of the Daleian spirit. Hundreds of Old Boys answered the call, trading rugby jerseys for military fatigues. Their sacrifice is etched into the very stones of our campus, a somber reminder of duty.",
+        "image": "https://images.unsplash.com/photo-1528659570884-6d2c49c71675?q=80&w=2000&auto=format&fit=crop"
+    },
+    {
+        "year": "1950s",
+        "title": "Golden Era of Sport",
+        "text": "Mid-century saw Dale cement its reputation as a sporting powerhouse. The First XV became feared across the nation, playing a brand of running rugby that dazzled crowds and dismantled opponents.",
+        "image": "https://images.unsplash.com/photo-1519003300449-424423927692?q=80&w=2072&auto=format&fit=crop"
+    },
+    {
+        "year": "1990s",
+        "title": "A New Dawn",
+        "text": "As South Africa transformed, so did Dale. Embracing diversity while holding fast to our core values, the college became a model of integration and brotherhood, proving that the Heron's flight knows no boundaries.",
+        "image": "https://images.unsplash.com/photo-1529390003868-e9fd267d9688?q=80&w=2076&auto=format&fit=crop"
+    },
+    {
+        "year": "2026",
+        "title": "The Future",
+        "text": "Today, we stand taller than ever. Modern facilities, cutting-edge academics, and an undying spirit. The methods have evolved, but the mission remains: Per Ardua ad Astra - Through Adversity to the Stars.",
+        "image": "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?q=80&w=1974&auto=format&fit=crop"
+    }
+]

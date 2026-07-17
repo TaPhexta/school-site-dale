@@ -1,0 +1,170 @@
+.admissions-page {
+  background: #ffffff;
+}
+
+.admissions-hero {
+  padding: 10rem 0 5rem;
+  background: var(--dale-gray);
+}
+
+.admissions-hero h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  color: var(--dale-black);
+  margin-bottom: 1.5rem;
+}
+
+.admissions-hero p {
+  max-width: 42rem;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  color: rgb(71 85 105);
+  line-height: 1.7;
+}
+
+.admissions-content {
+  display: flex;
+  gap: 4rem;
+  padding: 5rem 1.5rem;
+}
+
+.admissions-sidebar {
+  width: 33%;
+}
+
+.admissions-step {
+  margin-bottom: 3rem;
+}
+
+.admissions-step h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.admissions-step h3 span {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--dale-black);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+.admissions-step p {
+  padding-left: 2.75rem;
+  color: rgb(71 85 105);
+  line-height: 1.7;
+}
+
+.required-documents {
+  margin-top: 2rem;
+  background: var(--dale-red);
+  color: white;
+  padding: 2rem;
+}
+
+.required-documents h4 {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.required-documents ul {
+  padding-left: 1rem;
+}
+
+.required-documents li {
+  margin-bottom: 0.5rem;
+}
+
+.admissions-form-card {
+  width: 67%;
+  background: white;
+  border: 1px solid rgb(226 232 240);
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.admissions-form-card h2 {
+  font-size: 2rem;
+  color: var(--dale-black);
+  margin-bottom: 2rem;
+}
+
+.admissions-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.form-section {
+  border-top: 1px solid rgb(241 245 249);
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section label,
+.form-grid label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgb(100 116 139);
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  background: rgb(248 250 252);
+  border: 1px solid rgb(226 232 240);
+  padding: 0.875rem 1rem;
+  margin-bottom: 1.5rem;
+  transition: 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--dale-red);
+}
+
+.textarea {
+  height: 8rem;
+  resize: vertical;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .admissions-content {
+    flex-direction: column;
+  }
+
+  .admissions-sidebar,
+  .admissions-form-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admissions-form-card {
+    padding: 2rem;
+  }
+}

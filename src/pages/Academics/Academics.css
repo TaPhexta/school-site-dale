@@ -1,0 +1,145 @@
+.academics-page {
+  background: #fff;
+}
+
+.academics-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 10rem 0 5rem;
+  background: var(--dale-black);
+  color: #fff;
+  text-align: center;
+}
+
+.academics-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.academics-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.academics-hero h1 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  margin-bottom: 2rem;
+}
+
+.academics-intro {
+  max-width: 800px;
+  margin: auto;
+}
+
+.academics-intro p {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  line-height: 1.8;
+}
+
+.academics-divider {
+  width: 80px;
+  height: 4px;
+  background: var(--dale-red);
+  margin: 2rem auto;
+}
+
+.academics-intro span {
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: var(--dale-gold);
+  font-size: 0.8rem;
+}
+
+.academics-staff h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.staff-card {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.staff-image {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.staff-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+
+.staff-card:hover img {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+.staff-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  padding: 1rem;
+  text-align: center;
+  transform: translateY(0.5rem);
+  transition: 0.3s;
+}
+
+.staff-card:hover .staff-info {
+  transform: translateY(0);
+}
+
+.staff-role {
+  margin: 0.4rem 0;
+  color: var(--dale-red);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+.staff-subject {
+  opacity: 0;
+  transition: 0.3s;
+  color: #64748b;
+}
+
+.staff-card:hover .staff-subject {
+  opacity: 1;
+}
+
+.staff-mail {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--dale-red);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.staff-card:hover .staff-mail {
+  opacity: 1;
+}
