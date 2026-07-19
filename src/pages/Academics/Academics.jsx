@@ -3,7 +3,7 @@ import "./Academics.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
-import staff from "../../data/academics-staff.json";
+import staff from "../../data/staff-placeholder.json";
 
 function Academics() {
   return (

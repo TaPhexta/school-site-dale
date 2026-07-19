@@ -1,6 +1,4 @@
-import Hero from "../components/Her";
-import QuoteSection from "../components/QuoteSection";
-import Stats from "../components/Stats";
+import Hero from "../../components/Hero/Hero";
 
 function Home() {
   return (

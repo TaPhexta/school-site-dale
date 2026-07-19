@@ -1,10 +1,9 @@
 import "./Culture.css";
 
-import CheckerboardSection from "../../components/CheckerboardSection/CheckerboardSection";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 
-import activities from "../../data/culture-activities.json";
+import activities from "../../data/cultural-activities.json";
 
 function Culture() {
   return (
