@@ -2,11 +2,11 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import sports from "../../data/sport.json";
 import "./Sport.css";
+import Checkerboard from "../../components/Checkerboard/Checkerboard";
 
 function Sport() {
   return (
     <div className="sport-page">
-      <Header activePage="sport" />
 
       <section className="sport-hero">
         <div className="sport-hero-overlay"></div>
@@ -24,15 +24,13 @@ function Sport() {
 
       <section className="sport-sections">
         {sports.map((sport, index) => (
-          <CheckerboardSection
-            key={index}
+          <Checkerboard
+            key={sport.title}
             {...sport}
             isReversed={index % 2 !== 0}
           />
         ))}
       </section>
-
-      <Footer />
     </div>
   );
 }

@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Home",
+        "path": "/",
+        "showInNav": true,
+        "showInFooter": false,
+        "hasHero": true
+    },
+    {
+        "name": "Our Story",
+        "path": "/about",
+        "showInNav": true,
+        "showInFooter": false,
+        "hasHero": true
+    },
+    {
+        "name": "Academics",
+        "path": "/academics",
+        "showInNav": true,
+        "showInFooter": true,
+        "hasHero": true
+    },
+    {
+        "name": "Sport",
+        "path": "/sport",
+        "showInNav": true,
+        "showInFooter": true,
+        "hasHero": true
+    },
+    {
+        "name": "Culture",
+        "path": "/culture",
+        "showInNav": true,
+        "showInFooter": true,
+       "hasHero": true
+    },
+    {
+        "name": "Boarding",
+        "path": "/boarding",
+        "showInNav": true,
+        "showInFooter": true,
+        "hasHero": true
+    },
+    {
+        "name": "News",
+        "path": "/news",
+        "showInNav": true,
+        "showInFooter": true,
+        "hasHero": false
+    },
+    {
+        "name": "Admissions",
+        "path": "/admissions",
+        "showInNav": false,
+        "showInFooter": true,
+        "hasHero": false
+    }
+]

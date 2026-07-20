@@ -1,12 +1,9 @@
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
 import newsItems from "../../data/news.json";
 import "./News.css";
 
 function News() {
   return (
     <div className="news-page">
-      <Header activePage="news" />
 
       <section className="news-hero container-custom">
         <h1 className="news-title">THE HERON</h1>
@@ -33,8 +30,6 @@ function News() {
           </article>
         ))}
       </section>
-
-      <Footer />
     </div>
   );
 }

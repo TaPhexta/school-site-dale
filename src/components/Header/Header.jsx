@@ -1,9 +1,19 @@
 import React from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+
+import navigation from "../../data/navigation.json";
+
 import "./Header.css";
 
-function Header({ activePage = "home" }) {
+function Header({ theme = "light" }) {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+
+  const location = useLocation();
+  const currentPage = navigation.find(
+    (page) => page.path === location.pathname,
+  );
+  const useDarkTheme = isScrolled || !currentPage?.hasHero;
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -15,54 +25,17 @@ function Header({ activePage = "home" }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = [
-    { name: "Home", href: "index.html" },
-    { name: "Our Story", href: "about.html" },
-    { name: "Academics", href: "academics.html" },
-    { name: "Sport", href: "sport.html" },
-    { name: "Culture", href: "culture.html" },
-    { name: "Boarding", href: "boarding.html" },
-    { name: "News", href: "news.html" },
-  ];
-
-  const handleNavClick = (href) => {
-    if (href.startsWith("#")) {
-      const isHome =
-        window.location.pathname.endsWith("index.html") ||
-        window.location.pathname === "/" ||
-        window.location.pathname === "/app";
-
-      if (isHome) {
-        const element = document.querySelector(href);
-
-        if (element) {
-          element.scrollIntoView({
-            behavior: "smooth",
-          });
-        }
-      } else {
-        window.location.href = `index.html${href}`;
-      }
-    } else {
-      window.location.href = href;
-    }
-
-    setMobileMenuOpen(false);
-  };
-
   return (
     <header
       className={`header ${
         isScrolled ? "header-scrolled" : "header-transparent"
       }`}
-      data-name="header"
-      data-file="components/Header.js"
     >
       <div className="container-custom flex justify-between items-center">
-        <a href="index.html" className="header-logo">
+        <Link to="/" className="header-logo">
           <div
             className={`header-logo-circle ${
-              isScrolled
+              useDarkTheme
                 ? "header-logo-circle-scrolled"
                 : "header-logo-circle-transparent"
             }`}
@@ -73,7 +46,7 @@ function Header({ activePage = "home" }) {
           <div>
             <span
               className={`header-title ${
-                isScrolled ? "header-title-dark" : "header-title-light"
+                useDarkTheme ? "header-title-dark" : "header-title-light"
               }`}
             >
               DALE COLLEGE
@@ -81,39 +54,40 @@ function Header({ activePage = "home" }) {
 
             <span
               className={`header-subtitle ${
-                isScrolled ? "header-subtitle-dark" : "header-subtitle-light"
+                useDarkTheme ? "header-subtitle-dark" : "header-subtitle-light"
               }`}
             >
               Boys' High School
             </span>
           </div>
-        </a>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
-            <button
-              key={item.name}
-              onClick={() => handleNavClick(item.href)}
-              className={`header-nav-link ${
-                isScrolled ? "header-nav-dark" : "header-nav-light"
-              } ${
-                activePage === item.name.toLowerCase()
-                  ? "header-nav-active"
-                  : ""
-              }`}
-            >
-              {item.name}
-            </button>
-          ))}
+          {navigation
+            .filter((item) => item.showInNav)
+            .map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                className={({ isActive }) =>
+                  [
+                    "header-nav-link",
+                    useDarkTheme ? "header-nav-dark" : "header-nav-light",
+                    isActive ? "header-nav-active" : "",
+                  ].join(" ")
+                }
+              >
+                {item.name}
+              </NavLink>
+            ))}
 
-          <a
-            href="admissions.html"
-            className={`btn ${
-              isScrolled ? "btn-primary" : "btn-outline"
-            } text-xs px-5 py-2`}
+          <Link
+            to="/admissions"
+            className="btn btn-primary mt-4"
+            onClick={() => setMobileMenuOpen(false)}
           >
             Apply Now
-          </a>
+          </Link>
         </nav>
 
         <button
@@ -122,7 +96,7 @@ function Header({ activePage = "home" }) {
         >
           <div
             className={`icon-${mobileMenuOpen ? "x" : "menu"} text-2xl ${
-              isScrolled ? "text-[var(--dale-black)]" : "text-white"
+              useDarkTheme ? "text-[var(--dale-black)]" : "text-white"
             }`}
           />
         </button>
@@ -130,17 +104,16 @@ function Header({ activePage = "home" }) {
 
       {mobileMenuOpen && (
         <div className="header-mobile-menu">
-          {navItems.map((item) => (
-            <button
-              key={item.name}
-              onClick={() => handleNavClick(item.href)}
+          {navigation.map((item) => (
+            <NavLink
+              key={item.path}
+              to={item.path}
+              onClick={() => setMobileMenuOpen(false)}
               className="header-mobile-link"
             >
               {item.name}
-            </button>
+            </NavLink>
           ))}
-
-          <button className="btn btn-primary mt-4">Apply Now</button>
         </div>
       )}
     </header>

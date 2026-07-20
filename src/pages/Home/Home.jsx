@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
+
 import Hero from "../../components/Hero/Hero";
 
 function Home() {
   return (
     <>
       <Hero />
+
       <section className="section-padding bg-slate-50">
         <div className="container-custom">
           <div className="news-heading">
@@ -13,10 +16,10 @@ function Home() {
               <h2>Life at Dale</h2>
             </div>
 
-            <a href="#" className="news-link">
+            <Link to="/news" className="news-link">
               View All News
               <span className="icon-arrow-right"></span>
-            </a>
+            </Link>
           </div>
 
           <div className="news-grid">
@@ -52,7 +55,7 @@ function Home() {
                     aliqua.
                   </p>
 
-                  <a href="#">Read More</a>
+                  <Link to="/news">Read More</Link>
                 </div>
               </article>
             ))}

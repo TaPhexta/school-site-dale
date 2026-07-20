@@ -1,14 +1,9 @@
 import "./Academics.css";
-
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-
-import staff from "../../data/staff-placeholder.json";
+import staff from "../../data/staff.json";
 
 function Academics() {
   return (
     <div className="academics-page">
-      <Header activePage="academics" />
 
       <section className="academics-hero">
         <div className="academics-pattern"></div>
@@ -55,8 +50,6 @@ function Academics() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

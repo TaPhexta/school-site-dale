@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import Navigation from "../../data/navigation.json";
 import "./Footer.css";
 
 function Footer() {
@@ -58,25 +60,11 @@ function Footer() {
             <h4 className="footer-heading">Quick Links</h4>
 
             <ul className="footer-links">
-              <li>
-                <a href="#">Admissions</a>
-              </li>
-
-              <li>
-                <a href="sport.html">Sport &amp; Culture</a>
-              </li>
-
-              <li>
-                <a href="#">Old Daleians</a>
-              </li>
-
-              <li>
-                <a href="#">News &amp; Events</a>
-              </li>
-
-              <li>
-                <a href="#">School Fees</a>
-              </li>
+              {Navigation.filter((item) => item.showInFooter).map((item) => (
+                <li key={item.path}>
+                  <Link to={item.path}>{item.name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -108,9 +96,9 @@ function Footer() {
           </p>
 
           <div className="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
+            <Link to="#">Privacy Policy</Link>
 
-            <a href="#">Terms of Use</a>
+            <Link to="#">Terms of Use</Link>
           </div>
         </div>
       </div>

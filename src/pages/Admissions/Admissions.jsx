@@ -1,13 +1,9 @@
 import "./Admissions.css";
-
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import admissions from "../../data/admissions.json";
 
 function Admissions() {
   return (
     <div className="admissions-page">
-      <Header activePage="admissions" />
 
       <section className="admissions-hero">
         <div className="container-custom text-center">
@@ -96,8 +92,6 @@ function Admissions() {
           </form>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

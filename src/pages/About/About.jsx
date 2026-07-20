@@ -1,6 +1,3 @@
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-
 import historyTimeline from "../../data/historyTimeline.json";
 
 import "./about.css";
@@ -8,7 +5,6 @@ import "./about.css";
 function About() {
   return (
     <div className="about-page">
-      <Header activePage="our story" />
 
       <section className="about-hero">
         <h1 className="about-title">Where It All Began</h1>
@@ -51,8 +47,6 @@ function About() {
           </article>
         ))}
       </section>
-
-      <Footer />
     </div>
   );
 }
