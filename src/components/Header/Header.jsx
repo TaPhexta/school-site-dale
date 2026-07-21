@@ -5,7 +5,7 @@ import navigation from "../../data/navigation.json";
 
 import "./Header.css";
 
-function Header({ theme = "light" }) {
+function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
@@ -31,7 +31,7 @@ function Header({ theme = "light" }) {
         isScrolled ? "header-scrolled" : "header-transparent"
       }`}
     >
-      <div className="container-custom flex justify-between items-center">
+      <div className="container-custom header-inner">
         <Link to="/" className="header-logo">
           <div
             className={`header-logo-circle ${
@@ -62,7 +62,7 @@ function Header({ theme = "light" }) {
           </div>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="header-nav">
           {navigation
             .filter((item) => item.showInNav)
             .map((item) => (
@@ -81,17 +81,13 @@ function Header({ theme = "light" }) {
               </NavLink>
             ))}
 
-          <Link
-            to="/admissions"
-            className="btn btn-primary mt-4"
-            onClick={() => setMobileMenuOpen(false)}
-          >
+          <Link to="/admissions" className="header-nav-link">
             Apply Now
           </Link>
         </nav>
 
         <button
-          className="md:hidden"
+          className="header-menu-button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           <div
@@ -104,16 +100,25 @@ function Header({ theme = "light" }) {
 
       {mobileMenuOpen && (
         <div className="header-mobile-menu">
-          {navigation.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              onClick={() => setMobileMenuOpen(false)}
-              className="header-mobile-link"
-            >
-              {item.name}
-            </NavLink>
-          ))}
+          <button
+            className="header-mobile-close"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <div className="icon-x"></div>
+          </button>
+
+          {navigation
+            .filter((item) => item.showInNav)
+            .map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                onClick={() => setMobileMenuOpen(false)}
+                className="header-mobile-link"
+              >
+                {item.name}
+              </NavLink>
+            ))}
         </div>
       )}
     </header>
