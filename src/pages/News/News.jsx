@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+
 import newsItems from "../../data/news.json";
+
 import "./News.css";
 
 function News() {
+  const articles = [...newsItems].sort((a, b) => b.id - a.id);
+
   return (
     <div className="news-page">
-
       <section className="news-hero container-custom">
         <h1 className="news-title">THE HERON</h1>
 
@@ -16,16 +20,28 @@ function News() {
       </section>
 
       <section className="container-custom news-content">
-        {newsItems.map((item, index) => (
-          <article key={index} className="news-article">
+        {articles.map((article) => (
+          <article key={article.id} className="news-article">
             <div className="news-sidebar">
-              <div className="news-category">{item.category}</div>
-              <div className="news-date">{item.date}</div>
+              <div className="news-category">{article.category}</div>
+
+              <div className="news-date">{article.date}</div>
             </div>
 
             <div className="news-body">
-              <h2>{item.title}</h2>
-              <p>{item.content}</p>
+              {article.images?.length > 0 && (
+                <div className="news-feature-image">
+                  <img src={article.images[0]} alt={article.title} />
+                </div>
+              )}
+
+              <h2>{article.title}</h2>
+
+              <p>{article.excerpt}</p>
+
+              <Link className="news-read-more" to={`/news/${article.slug}`}>
+                Continue Reading →
+              </Link>
             </div>
           </article>
         ))}

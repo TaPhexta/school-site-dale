@@ -1,26 +1,192 @@
 [
     {
-        "date": "May 12, 2025",
-        "category": "Sport",
-        "title": "First XV Triumphs in Border Derby",
-        "content": "In a display of sheer grit and tactical brilliance, the Dale College First XV secured a memorable victory against their arch-rivals this past Saturday. The 'Graveyard' was alive with the war cries of thousands as the team overturned a halftime deficit to win 24-17. Captain Siya Xaba led from the front, scoring two pivotal tries."
+        "id": 1,
+        "date": "March 3, 2025",
+        "published": "2025-03-03",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "interact-society-community-outreach",
+        "category": "Community",
+        "title": "Interact Society Leads Community Outreach Initiative",
+        "excerpt": "The Dale College Interact Society visited a local children's home, donating essential supplies while mentoring young learners through educational and sporting activities.",
+        "content": "Members of the Dale College Interact Society spent the afternoon at a local children's home, donating stationery, toiletries and non-perishable food collected through a school-wide drive. Learners also spent time mentoring younger children through educational games and sporting activities, reinforcing the school's commitment to servant leadership and community engagement.",
+        "images": [
+            "/assets/images/culture/interactGroup.jpeg"
+        ]
     },
     {
-        "date": "April 28, 2025",
-        "category": "Academics",
-        "title": "Daleian Scholars Achieve National Recognition",
-        "content": "Three Grade 12 learners have been selected for the South African Mathematics Olympiad finals. This prestigious achievement underscores the rigorous academic standards upheld at the college. We congratulate Thabo Mokoena, James Smith, and David Williams on their outstanding performance."
+        "id": 2,
+        "date": "March 14, 2025",
+        "published": "2025-03-14",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "debating-society-inspires-future-speakers",
+        "category": "Debating",
+        "title": "Debating Society Inspires Future Speakers",
+        "excerpt": "Dale College debaters introduced primary school learners to public speaking through interactive workshops and friendly debates.",
+        "content": "Representatives from the Dale College Debating Society visited several local primary schools to introduce learners to public speaking and debating. Through interactive workshops and friendly debates, the team encouraged confidence, critical thinking and effective communication among aspiring young speakers.",
+        "images": [
+            "/assets/images/sport/debatingKids.jpeg"
+        ]
     },
     {
-        "date": "April 15, 2025",
-        "category": "Culture",
-        "title": "Annual Choral Festival Date Announced",
-        "content": "The much-anticipated Annual Inter-Schools Choral Festival will take place on June 5th in the School Hall. This year promises to be our biggest yet, with choirs from across the Eastern Cape descending on King William's Town. Tickets go on sale next Monday."
+        "id": 3,
+        "date": "March 22, 2025",
+        "published": "2025-03-22",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "high-jumper-strikes-gold-at-border-athletics",
+        "category": "Athletics",
+        "title": "High Jumper Reaches New Heights at Border Athletics Meeting",
+        "excerpt": "A personal best performance earned Dale College high jumper Ethan Daniels gold and qualification for the provincial championships.",
+        "content": "Dale College celebrated an outstanding performance at the Border Athletics Meeting as Grade 11 learner Ethan Daniels claimed gold in the high jump. His personal best clearance secured qualification for the provincial championships and highlighted the strength of the school's athletics programme.",
+        "images": [
+            "/assets/images/sport/highJump.jpeg"
+        ]
     },
     {
-        "date": "March 30, 2025",
+        "id": 4,
+        "date": "April 5, 2025",
+        "published": "2025-04-05",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "interhouse-hockey-festival-2025",
+        "category": "Hockey",
+        "title": "Interhouse Hockey Brings Out Competitive Spirit",
+        "excerpt": "The annual Interhouse Hockey Festival showcased spirited competition, sportsmanship and house pride across every grade.",
+        "content": "The annual Interhouse Hockey Festival transformed the Astro into a sea of colour as houses competed for top honours. The day featured spirited competition, outstanding sportsmanship and enthusiastic support from learners, staff and parents, making it one of the highlights of the sporting calendar.",
+        "images": [
+            "/assets/images/sport/hockeyInterhouseJuniors1.jpeg",
+            "/assets/images/sport/hockeyInterhouseJuniors2.jpeg",
+            "/assets/images/sport/hockeyInterhouseSeniors1.jpeg",
+            "/assets/images/sport/hockeyInterhouseSeniors2.jpeg"
+        ]
+    },
+    {
+        "id": 5,
+        "date": "April 18, 2025",
+        "published": "2025-04-18",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "old-daleians-invest-in-sporting-facilities",
         "category": "Old Boys",
-        "title": "Reunion Weekend 2025: A Resounding Success",
-        "content": "Over 500 Old Daleians returned to their alma mater last weekend to celebrate camaraderie and tradition. The weekend kicked off with a formal dinner on Friday evening, followed by a day of sport and reminiscence. It was a powerful reminder that one never truly leaves Dale."
+        "title": "Old Daleians Invest in Future Sporting Facilities",
+        "excerpt": "The Old Boys Association contributed towards improving Dale College's sporting facilities for future generations of Daleians.",
+        "content": "The Old Boys Association donated funds towards ongoing improvements to the school's sporting facilities. The contribution will assist with field maintenance, infrastructure upgrades and the continued development of sporting opportunities for current and future Daleians.",
+        "images": [
+            "/assets/images/grounds/athleticsTrack.jpeg"
+        ]
+    },
+    {
+        "id": 6,
+        "date": "May 2, 2025",
+        "published": "2025-05-02",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "flower-day-celebrates-brotherhood",
+        "category": "Tradition",
+        "title": "Flower Day Celebrates Brotherhood and School Spirit",
+        "excerpt": "Learners proudly wore flowers on their blazers as part of a cherished Dale tradition supporting community charitable initiatives.",
+        "content": "Learners proudly wore flowers on their blazers as part of Dale College's annual Flower Day celebration. The tradition encouraged school spirit while raising awareness and support for community charitable initiatives, with every flower worn representing a meaningful contribution.",
+        "images": [
+            "/assets/images/news/generalBoysSpecialDay.jpeg"
+        ]
+    },
+    {
+        "id": 7,
+        "date": "May 12, 2025",
+        "published": "2025-05-12",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "first-xi-unbeaten-at-eastern-cape-cricket-festival",
+        "category": "Cricket",
+        "title": "First XI Complete Unbeaten Weekend at Invitational Festival",
+        "excerpt": "The Dale College First XI returned unbeaten after an impressive showing at the Eastern Cape Invitational Cricket Festival.",
+        "content": "The Dale College First XI returned unbeaten from the annual Eastern Cape Invitational Cricket Festival after recording three impressive victories against strong opposition. Disciplined bowling performances, consistent batting partnerships and outstanding fielding ensured the team maintained its excellent form throughout the tournament.",
+        "images": [
+            "/assets/images/news/cricketTournament.jpeg",
+            "/assets/images/sports/cricketMatchSeniors1.jpeg",
+            "/assets/images/sports/cricketTeamContent1.jpeg",
+            "/assets/images/sports/cricketMatchSeniors.jpeg"
+        ]
+    },
+    {
+        "id": 8,
+        "date": "May 24, 2025",
+        "published": "2025-05-24",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "provincial-colours-for-water-polo-star",
+        "category": "Water Polo",
+        "title": "Provincial Colours Awarded to Dale Water Polo Star",
+        "excerpt": "Grade 12 learner Matthew Jacobs earned Border provincial colours following an outstanding water polo season.",
+        "content": "Grade 12 learner Matthew Jacobs has been selected to represent the Border provincial water polo team following an exceptional season. His selection recognises years of dedication in the pool and serves as inspiration for younger players within the programme.",
+        "images": [
+            "/assets/images/sports/waterpoloProvincial.jpeg"
+        ]
+    },
+    {
+        "id": 9,
+        "date": "June 3, 2025",
+        "published": "2025-06-03",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "senior-water-polo-team-impresses-at-coastal-tournament",
+        "category": "Water Polo",
+        "title": "Senior Water Polo Squad Impresses at Coastal Tournament",
+        "excerpt": "The senior water polo side produced determined performances against top schools at the Coastal Invitational Tournament.",
+        "content": "Competing against some of the country's leading schools, the Dale College senior water polo team produced several determined performances during the Coastal Invitational Tournament. Valuable experience gained over the weekend will strengthen preparations for the remainder of the season.",
+        "images": [
+            "/assets/images/sports/waterpolo2.jpeg",
+            "/assets/images/sports/waterpolo1.jpeg",
+            "/assets/images/sports/waterpolo3.jpeg"
+        ]
+    },
+    {
+        "id": 10,
+        "date": "June 14, 2025",
+        "published": "2025-06-14",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "annual-hockey-fun-day-brings-players-together",
+        "category": "Hockey",
+        "title": "Hockey Fun Day Unites Junior and Senior Players",
+        "excerpt": "Learners from every age group came together for a day of hockey, coaching clinics and mixed-team matches celebrating the sport.",
+        "content": "Learners from every age group enjoyed a relaxed Hockey Fun Day filled with mixed-team matches, skills challenges and coaching clinics. The event promoted friendship across grades while celebrating participation and enjoyment of the sport.",
+        "images": [
+            "/assets/images/news/hockeyFunny1.jpeg"
+        ]
+    },
+    {
+        "id": 11,
+        "date": "July 8, 2025",
+        "published": "2025-07-08",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "first-xi-secures-cricket-derby-victory",
+        "category": "Cricket",
+        "title": "Senior Cricket Side Clinches Derby Victory",
+        "excerpt": "A disciplined bowling display and composed batting performance secured another memorable derby victory for the First XI.",
+        "content": "Dale College's First XI secured an emphatic victory over their long-standing rivals after a disciplined bowling display restricted the opposition before a composed batting performance guided the team to victory. The result continues a strong season for the senior cricket programme.",
+        "images": [
+            "/assets/images/sport/cricketTeamContent1.jpeg"
+        ]
+    },
+    {
+        "id": 12,
+        "date": "July 19, 2025",
+        "published": "2025-07-19",
+        "author": "Dale College Communications",
+        "readingTime": "3 min read",
+        "slug": "choir-earns-national-recognition",
+        "category": "Culture",
+        "title": "Choir Earns National Recognition with Fourth-Place Finish",
+        "excerpt": "Dale College's choir finished fourth nationally after impressing judges with its distinctive blend of gwijo-inspired harmonies and classical choral excellence.",
+        "content": "The Dale College Choir delivered an unforgettable performance at the National Schools Choir Competition, finishing fourth overall. Judges praised the choir's unique programme, which blended powerful gwijo-inspired harmonies with refined classical choral technique, earning standing ovations and widespread admiration from audiences and fellow competitors alike.",
+        "images": [
+            "/assets/images/culture/choir1.jpeg",
+            "/assets/images/culture/choir2.jpeg",
+            "/assets/images/culture/choir3.jpeg"
+        ]
     }
 ]

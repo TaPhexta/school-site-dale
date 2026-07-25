@@ -9,6 +9,7 @@ import Boarding from "./pages/Boarding/Boarding";
 import Culture from "./pages/Culture/Culture";
 import Home from "./pages/Home/Home";
 import News from "./pages/News/News";
+import NewsArticle from "./pages/NewsArticle/NewsArticle"
 import Sport from "./pages/Sport/Sport";
 
 const router = createBrowserRouter([
@@ -24,6 +25,19 @@ const router = createBrowserRouter([
       { path: "culture", element: <Culture /> },
       { path: "news", element: <News /> },
       { path: "sport", element: <Sport /> },
+      {
+        path: "news",
+        children: [
+          {
+            index: true,
+            element: <News />,
+          },
+          {
+            path: ":slug",
+            element: <NewsArticle />,
+          },
+        ],
+      },
     ],
   },
 ]);

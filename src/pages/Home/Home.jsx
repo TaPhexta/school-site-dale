@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
-
 import Hero from "../../components/Hero/Hero";
 
+import newsItems from "../../data/news.json";
+
 function Home() {
+  const latestNews = [...newsItems].sort((a, b) => b.id - a.id).slice(0, 4);
+
   return (
     <>
       <Hero />
@@ -23,39 +26,26 @@ function Home() {
           </div>
 
           <div className="news-grid">
-            {[1, 2, 3].map((item) => (
-              <article key={item} className="news-card">
+            {latestNews.map((article) => (
+              <article key={article.id} className="news-card">
                 <div className="news-image">
                   <img
-                    src={`https://images.unsplash.com/photo-${
-                      item === 1
-                        ? "1519003300449-424423927692"
-                        : item === 2
-                          ? "1509062522246-3755977927d7"
-                          : "1523580494863-6f3031224c94"
-                    }?q=80&w=800&auto=format&fit=crop`}
-                    alt="News"
+                    src={
+                      article.images?.[0] ||
+                      "/assets/images/placeholders/news-placeholder.jpg"
+                    }
+                    alt={article.title}
                   />
                 </div>
 
                 <div className="news-content">
-                  <div className="news-category">Sport</div>
+                  <div className="news-category">{article.category}</div>
 
-                  <h3>
-                    {item === 1
-                      ? "First XV Rugby Team Dominates Regional Derby"
-                      : item === 2
-                        ? "Academic Awards Ceremony 2025"
-                        : "New Science Centre Opening"}
-                  </h3>
+                  <h3>{article.title}</h3>
 
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
+                  <p>{article.excerpt}</p>
 
-                  <Link to="/news">Read More</Link>
+                  <Link to={`/news/${article.slug}`}>Read More</Link>
                 </div>
               </article>
             ))}

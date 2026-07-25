@@ -109,3 +109,35 @@
     font-size: 1.75rem;
   }
 }
+
+.news-feature-image {
+  width: 100%;
+  height: 24rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.news-feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.news-feature-image:hover img {
+  transform: scale(1.05);
+}
+
+.news-read-more {
+  display: inline-block;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: var(--dale-red);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.news-read-more:hover {
+  text-decoration: underline;
+}
