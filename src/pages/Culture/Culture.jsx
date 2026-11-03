@@ -7,7 +7,7 @@ function Culture() {
     <div className="culture-page">
       <section className="culture-hero">
         <img
-          src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=2070&auto=format&fit=crop"
+          src={`${import.meta.env.BASE_URL}assets/images/culture-hero.jpg`}
           alt="Culture"
         />
 

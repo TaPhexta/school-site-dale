@@ -69,7 +69,7 @@
 
 .checkerboard-divider {
   width: 80px;
-  height: 4px;
+  height: 6px;
   background: var(--dale-red);
   margin-bottom: 2rem;
 }
@@ -110,4 +110,8 @@
   .checkerboard-gallery-image {
     height: 140px;
   }
+}
+
+.checkerboard-content .btn-primary {
+  padding: 14px 28px;
 }

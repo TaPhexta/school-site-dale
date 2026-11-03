@@ -3,6 +3,8 @@ import Hero from "../../components/Hero/Hero";
 
 import newsItems from "../../data/news.json";
 
+import "./Home.css";
+
 function Home() {
   const latestNews = [...newsItems].sort((a, b) => b.id - a.id).slice(0, 4);
 
@@ -30,10 +32,7 @@ function Home() {
               <article key={article.id} className="news-card">
                 <div className="news-image">
                   <img
-                    src={
-                      article.images?.[0] ||
-                      "/assets/images/placeholders/news-placeholder.jpg"
-                    }
+                    src={`${import.meta.env.BASE_URL}assets/images/${article.images[0]}`}
                     alt={article.title}
                   />
                 </div>

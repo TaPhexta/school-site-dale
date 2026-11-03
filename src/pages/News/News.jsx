@@ -31,7 +31,10 @@ function News() {
             <div className="news-body">
               {article.images?.length > 0 && (
                 <div className="news-feature-image">
-                  <img src={article.images[0]} alt={article.title} />
+                  <img
+                    src={`${import.meta.env.BASE_URL}assets/images/${article.images[0]}`}
+                    alt={article.title}
+                  />
                 </div>
               )}
 

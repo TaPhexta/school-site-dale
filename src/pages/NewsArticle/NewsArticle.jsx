@@ -58,7 +58,7 @@ function NewsArticle() {
 
         {article.images.length > 0 && (
           <div className="article-hero-image">
-            <img src={article.images[0]} alt={article.title} />
+            <img src={`${import.meta.env.BASE_URL}assets/images/${article.images[0]}`} alt={article.title} />
           </div>
         )}
 
@@ -74,10 +74,10 @@ function NewsArticle() {
 
         {article.images.length > 1 && (
           <section className="article-gallery">
-            {article.images.slice(1).map((image, index) => (
+            {article.images.slice(1).map((imagePath, index) => (
               <img
-                key={index}
-                src={image}
+                key={index + 1}
+                src={`${import.meta.env.BASE_URL}assets/images/${imagePath}`}
                 alt={`${article.title} ${index + 2}`}
               />
             ))}
@@ -125,7 +125,7 @@ function NewsArticle() {
         <div className="related-grid">
           {relatedArticles.map((item) => (
             <article key={item.id} className="related-card">
-              <img src={item.images[0]} alt={item.title} />
+              <img src={`${import.meta.env.BASE_URL}assets/images/${item.images[0]}`} alt={item.title} />
 
               <div>
                 <span>{item.category}</span>

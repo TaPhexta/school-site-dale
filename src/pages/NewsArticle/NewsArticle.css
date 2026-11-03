@@ -76,7 +76,7 @@
 
 .article-hero-image img {
   width: 100%;
-  display: block;
+  display: flex;
   transition: transform .5s ease;
 }
 

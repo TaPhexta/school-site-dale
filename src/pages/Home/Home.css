@@ -1,0 +1,6 @@
+.news-image img {
+  width: 500px;      
+  height: 500px;     
+  object-fit: cover; /* Crops the image gracefully to fill the box without distorting it */
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
