@@ -18,7 +18,7 @@ function About() {
         {historyTimeline.map((section, index) => (
           <article key={section.year} className="timeline-section">
             <div className="timeline-background">
-              <img src={section.image} alt={section.title} />
+              <img src={`${import.meta.env.BASE_URL}assets/images/${section.image}`} alt={section.title} />
 
               <div className="timeline-overlay"></div>
             </div>
@@ -39,7 +39,7 @@ function About() {
               <div className="timeline-image">
                 <div className="timeline-image-border">
                   <div className="timeline-image-wrapper">
-                    <img src={section.image} alt={section.title} />
+                    <img src={`${import.meta.env.BASE_URL}assets/images/${section.image}`} alt={section.title} />
                   </div>
                 </div>
               </div>
