@@ -1,6 +1,5 @@
 import "./Boarding.css";
 
-import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 
 import houses from "../../data/boarding-houses.json";
@@ -81,8 +80,6 @@ function Boarding() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }
