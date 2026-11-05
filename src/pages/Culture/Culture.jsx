@@ -1,5 +1,5 @@
-import activities from "../../data/cultural-activities.json";
 import Checkerboard from "../../components/Checkerboard/CheckerBoard";
+import activities from "../../data/cultural-activities.json";
 import "./Culture.css";
 
 function Culture() {
@@ -7,7 +7,7 @@ function Culture() {
     <div className="culture-page">
       <section className="culture-hero">
         <img
-          src={`${import.meta.env.BASE_URL}assets/images/culture-hero.jpg`}
+          src={`${import.meta.env.BASE_URL}assets/images/culture/SCA2.jpeg`}
           alt="Culture"
         />
 

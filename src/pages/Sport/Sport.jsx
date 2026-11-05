@@ -1,4 +1,4 @@
-import Checkerboard from "../../components/CheckerBoard/CheckerBoard";
+import Checkerboard from "../../components/Checkerboard/CheckerBoard";
 import sport from "../../data/sport.json";
 import "./Sport.css";
 
@@ -9,7 +9,7 @@ function Sport() {
         <div className="sport-hero-overlay"></div>
 
         <img
-          src={`${import.meta.env.BASE_URL}assets/images/sport/rugby1.jpeg`}
+          src={`${import.meta.env.BASE_URL}assets/images/sport/waterpoloProvincial.jpeg`}
           alt="Sport"
         />
 
